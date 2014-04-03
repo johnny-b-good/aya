@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang='en' ng-app='Aya'>
+<head>
+  <meta charset='utf-8'>
+  <title>My AngularJS App</title>
+  <link rel='stylesheet' href='css/app.css'/>
+</head>
+<body>
+
+  <div class='aya' ng-controller='MainController'>
+      <audio class='aya__audio' src=''></audio>
+      <div class='aya__main-wrap'>
+          <div class='aya__cover-wrap'>
+              <img class='aya__cover-img' src='' alt=''/>
+          </div>
+
+          <div class='aya__progress'>
+              <div class='aya__progress-time'></div>
+              <div class='aya__progress-bar'></div>
+          </div>
+
+          <div class='aya__volume' ng-controller="VolumeController">
+              <div class='aya__volume-bar'></div>
+              <button class='aya__button aya__button--volume aya__button--volume-down'></button>
+              <button class='aya__button aya__button--volume aya__button--volume-mute'></button>
+              <button class='aya__button aya__button--volume aya__button--volume-up'></button>
+          </div>
+
+          <div class='aya__playback-controls'>
+              <button class='aya__button aya__button--playback aya__button--playback-prev' title='Previous'></button>
+              <button class='aya__button aya__button--playback aya__button--playback-play' title='Play'    ></button>
+              <button class='aya__button aya__button--playback aya__button--playback-pause'title='Pause'   ></button>
+              <button class='aya__button aya__button--playback aya__button--playback-stop' title='Stop'    ></button>
+              <button class='aya__button aya__button--playback aya__button--playback-next' title='Next'    ></button>
+          </div>
+
+          <div class='aya__song-info'>
+              <div class='aya__song-title'></div>
+              <div class='aya__song-artist-n-album'></div>
+          </div>
+      </div>
+
+      <ul class='aya__playlist'>
+          <li class='aya__playlist-item' ng-repeat="track in model.playlist">
+              <a class='aya__playlist-item-link' href='javascript:void(0);'>{{track.title}}</a>
+          </li>
+      </ul>
+
+  </div>
+
+
+  <script src='lib/angular-1.2.15.js'></script>
+  <script src='js/app.js'></script>
+  <script src='js/services.js'></script>
+  <script src='js/controllers.js'></script>
+  <script src='js/filters.js'></script>
+  <script src='js/directives.js'></script>
+</body>
+</html>

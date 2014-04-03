@@ -1,0 +1,32 @@
+[
+    {
+        "file": "music/alabama.mp3",
+        "title": "Sweet Home Alabama",
+        "album": "Album 1",
+        "artist": "Artist 1"
+    },
+    {
+        "file": "music/distraction.mp3",
+        "title": "Looking For Distraction",
+        "album": "Album 2",
+        "artist": "Artist 2"
+    },
+    {
+        "file": "music/godark.mp3",
+        "title": "GO Dark",
+        "album": "Album 3",
+        "artist": "Artist 3"
+    },
+    {
+        "file": "music/goodbye.mp3",
+        "title": "First Good-Bye",
+        "album": "Album 4",
+        "artist": "Artist 4"
+    },
+    {
+        "file": "music/yuki.mp3",
+        "title": "Tsuuka Chiten no MUSICA",
+        "album": "Album 5",
+        "artist": "Artist 5"
+    }
+]

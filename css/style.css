@@ -1,0 +1,232 @@
+body {
+    background: slategray;
+}
+
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+
+
+.aplayer {
+    background: white;
+    width: 550px;
+    height: 640px;
+    box-shadow: 0 0 5px #333;
+    border-radius: 5px;
+    font-family: Ubuntu, sans-serif;
+    color: #333;
+}
+.aplayer__audio {
+    display: none;
+}
+.aplayer__main-wrap {
+    /*white-space: nowrap;*/
+    position: relative;
+}
+
+.aplayer__button {
+    display: block;
+    float: left;
+    background: #eee;
+    border: 1px solid #333;
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: inset 0 0 3px #bbb;
+    /*background: linear-gradient(to bottom, #fff 0, #eee 50%, #fff 100%);*/
+}
+.aplayer__button:after {
+    content: "";
+    position: absolute;
+    background: url('../img/icons2.png');
+    height: 16px;
+    width: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+}
+
+
+.aplayer__cover-wrap {
+    top: 10px;
+    left: 10px;
+    position:absolute;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #333;
+    padding: 1px;
+    /*background: #333;*/
+    overflow: hidden;
+}
+.aplayer__cover-img {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    display: block;
+    max-height: 100%;
+    width: 100%;
+    /*margin: 0 auto;*/
+    background: #fff;
+
+}
+
+
+
+
+
+.aplayer__progress {
+    position: absolute;
+    background: #333;
+    width: 368px;
+    height: 30px;
+    border: 1px solid #333;
+    top: 78px;
+    left: 170px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.aplayer__progress-time {
+    color: white;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+}
+.aplayer__progress-bar {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: deepskyblue url('../img/stripes2.png');
+    height: 30px;
+    width: 33%;
+
+}
+
+
+
+
+.aplayer__volume {
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    height: 30px;
+    padding: 0 2px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+.aplayer__volume-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 30px;
+    width: 50%;
+    background: deepskyblue;
+    border-radius: 5px 0 0 5px;
+}
+.aplayer__volume-bar_full {
+    border-radius: 5px;
+}
+.aplayer__button_volume {
+    height: 26px;
+    margin: 2px 0;
+}
+
+.aplayer__button_volume-up {
+    border-radius: 0 5px 5px 0;
+}
+
+.aplayer__button_volume-up:after {
+    background-position: -8px -168px;
+}
+
+.aplayer__button_volume-mute {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+}
+
+.aplayer__button_volume-mute:after {
+    background-position: -8px -232px;
+}
+
+.aplayer__button_volume-down {
+    border-radius: 5px 0 0 5px;
+}
+
+.aplayer__button_volume-down:after {
+    background-position: -8px -200px;
+}
+
+
+
+
+
+.aplayer__playback-controls {
+    position: absolute;
+    top: 120px;
+    left: 170px;
+}
+.aplayer__button_playback {
+    margin-right: 5px;
+}
+.aplayer__button_playback-prev:after {
+    background-position: -8px -136px;
+}
+.aplayer__button_playback-pause:after {
+    background-position: -8px -40px;
+}
+.aplayer__button_playback-play:after {
+    background-position: -8px -8px;
+}
+.aplayer__button_playback-stop:after {
+    background-position: -8px -72px;
+}
+.aplayer__button_playback-next:after {
+    background-position: -8px -104px;
+}
+
+
+
+
+
+
+
+
+.aplayer__song-info {
+    position: absolute;
+    top: 10px;
+    left: 170px;
+    width: 370px;
+    /*line-height: 20px;*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap
+}
+.aplayer__song-title {
+    width: 370px;
+    height: 24px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.aplayer__song-artist-n-album {}
+.aplayer__playlist {}

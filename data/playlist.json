@@ -1,30 +1,35 @@
 [
     {
-        "file": "music/alabama.mp3",
+        "src": "/music/alabama.mp3",
+        "cover": "/covers/pcb.jpg",
         "title": "Sweet Home Alabama",
         "album": "Album 1",
         "artist": "Artist 1"
     },
     {
-        "file": "music/distraction.mp3",
+        "src": "/music/distraction.mp3",
+        "cover": "/covers/pcb.jpg",
         "title": "Looking For Distraction",
         "album": "Album 2",
         "artist": "Artist 2"
     },
     {
-        "file": "music/godark.mp3",
+        "src": "/music/godark.mp3",
+        "cover": "/covers/pcb.jpg",
         "title": "GO Dark",
         "album": "Album 3",
         "artist": "Artist 3"
     },
     {
-        "file": "music/goodbye.mp3",
+        "src": "/music/goodbye.mp3",
+        "cover": "/covers/pcb.jpg",
         "title": "First Good-Bye",
         "album": "Album 4",
         "artist": "Artist 4"
     },
     {
-        "file": "music/yuki.mp3",
+        "src": "/music/yuki.mp3",
+        "cover": "/covers/pcb.jpg",
         "title": "Tsuuka Chiten no MUSICA",
         "album": "Album 5",
         "artist": "Artist 5"
